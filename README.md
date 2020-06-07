@@ -1,4 +1,4 @@
-# OSX_BSDHook
+# OSX-BSDHook
 
 This demo sets a pageguard hook on a MacOS application (via a dylib injection).
 

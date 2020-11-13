@@ -69,9 +69,3 @@ static void trapflag_handler(int signal, siginfo_t* si, void* arg) {
 ```
 
 In order to make sure the trapflag doesn't run forever (or hopefully not, because there could be an infinite loop in that page) we have to disable it once the address goes out of our target page's bounds. On the other case, we finally reach our address and we can go to our callback!
-
-## Takeaways
-
-This project was pretty fun to make because I was learning a lot of stuff when I was doing it. I did this back in the summer of 2019 but I never posted it for some reason. Anyways, if you're looking to implement this straight into whatever program you have right now, *don't*. This is just to get the general idea of the hook, and this program contains a lot of bugs now that I'm looking back on it. Luckily, you'll only need a few more lines of code to fix them.
-
-Cheers!
